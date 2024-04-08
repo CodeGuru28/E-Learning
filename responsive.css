@@ -1,0 +1,33 @@
+@media (max-width:1270px) {
+    .container{
+        margin-inline: 1rem;
+    }
+    .desktop-nav{
+        margin-inline: 1.5rem;
+    }
+}
+
+@media (max-width:760px) {
+    .last-btns .btn{
+        display: none;
+    }
+    .home nav{
+        display: block;
+    }
+    .home .first{
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    .search-bar{
+        display: none;
+    }
+    .logo{
+        font-size: 2.2rem;
+    }
+    .home .first{
+        display: none;
+    }
+}
+
