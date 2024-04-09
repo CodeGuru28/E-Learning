@@ -17,10 +17,13 @@
     .home .first{
         padding-bottom: 1rem;
     }
+    .side-navbar .btn{
+        display: block;
+    }
 }
 
 @media (max-width:600px) {
-    .search-bar{
+    .desktop-nav .search-bar{
         display: none;
     }
     .logo{
@@ -28,6 +31,9 @@
     }
     .home .first{
         display: none;
+    }
+    .side-navbar .search-bar{
+        display: flex;
     }
 }
 
