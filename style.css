@@ -123,12 +123,11 @@ header{
 }
 
 .desktop-nav .last-btns .menu{
-    /* display: none; */
     font-size: 2rem;
 }
 
 .home{
-    padding-top: 3.5rem;
+    padding-top: 6.5rem;
 }
 
 .home nav{
@@ -180,7 +179,7 @@ header{
     position: absolute;
     background-color: var(--color-sidebar);
     top: 0;
-    right: -100rem;
+    right: -40rem;
     height: 100vh;
     width: 40vmax;
     z-index: 99999;
@@ -242,10 +241,10 @@ header{
 
 .overlay{
     display: none;
-    background-color: green;
+    /* background-color: green; */
+    /* transition: background-color 1.2s ease-in-out; */
     position: absolute;
     z-index: 9999;
-    transition: background-color 1.2s ease-in-out;
     inset: 0;
 }
 
@@ -256,4 +255,73 @@ header{
 
 .home .home-link{
     display: none;
+}
+
+#sidenav-open{
+    display: none;
+}
+
+.content{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem
+}
+
+.content .left h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.content .left > p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+    max-width: 80%;
+}
+
+.content .email-input{
+    padding-inline: 1.2rem 0;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: fit-content;
+    border: 1px solid #bdbdbd;
+    margin-bottom: 2rem;
+}
+
+.content .email-input input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.content .right{
+    padding-right: 4rem;
+    max-width: 30rem;
+}
+
+.content .right img{
+    position: absolute;
+    left: -2rem;
+    top: -1rem;
+    border-radius: 30rem;
+    max-width: 26rem;
+}
+
+.content .capsule-container{
+    min-width: 26rem;
+    min-height: 36rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-light-yellow);
+    padding: 2rem 1.2rem;
+    border-radius: 30rem;
+    border: 6px solid #000;
 }

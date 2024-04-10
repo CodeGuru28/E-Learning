@@ -5,6 +5,7 @@ const sideNavOpen = document.querySelector('#sidenav-open');
 const sideNavClose = document.querySelector('#sidenav-close');
 const sideNavbar = document.querySelector('.side-navbar');
 const overlay = document.querySelector('.overlay');
+const sideLinks = document.querySelectorAll('.side-links');
 
 homeHam.addEventListener('click', () =>{
     homeHam.style.display = 'none';
@@ -24,10 +25,24 @@ homeClose.addEventListener('click', () =>{
 
 sideNavOpen.addEventListener('click', () =>{
     sideNavbar.style.right = "0";
-    overlay.style.display = "block";
+    setTimeout(() => {
+        overlay.style.display = "block";
+    }, 700);
 });
 
 sideNavClose.addEventListener('click', () =>{
-    sideNavbar.style.right = "-100rem";
+    sideNavbar.style.right = "-45rem";
+    overlay.style.display = "none";
+});
+
+sideLinks.forEach((link) => {
+    link.addEventListener('click', () =>{
+        sideNavbar.style.right = "-45rem";
+        overlay.style.display = "none";
+    })
+})
+
+overlay.addEventListener('click', () =>{
+    sideNavbar.style.right = "-45rem";
     overlay.style.display = "none";
 });
