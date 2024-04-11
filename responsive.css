@@ -79,9 +79,9 @@
     .content .right img{
         max-width: 22rem;
     }
-    
     .content .capsule-container{
         min-width: 22rem;
+        min-height: 30rem;
     }
 }
 
