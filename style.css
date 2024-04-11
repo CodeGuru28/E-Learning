@@ -8,7 +8,7 @@
 
 :root{
     --color-black: #020C16;
-    --color-gray: #7c7d7f;
+    --color-gray: #a2a2a2;
     --color-body: #F8F3EF;
     --color-card-white: ##FDF9F8;
     --color-dark-yellow: #FDD800;
@@ -324,4 +324,39 @@ header{
     padding: 2rem 1.2rem;
     border-radius: 30rem;
     border: 6px solid #000;
+}
+
+.numbers{
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.number{
+    padding: 2rem 4rem;
+}
+
+.number:hover{
+    transition: background 2s ease-in-out;
+    background-color: var(--color-light-yellow);
+    border-radius: 2rem;
+}
+
+.number:nth-child(1){
+    background-color: var(--color-light-yellow);
+    border-radius: 2rem;
+}
+
+.number h4{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.number span{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-gray);
 }

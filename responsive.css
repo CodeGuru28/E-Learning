@@ -29,6 +29,9 @@
         text-align: center;
         max-width: 100%;
     }
+    .numbers{
+        justify-content: center;
+    }
 }
 
 @media (max-width:760px) {
@@ -104,5 +107,9 @@
         padding: 2rem 1.2rem;
         border-radius: 30rem;
         border: 6px solid #000;
+    }
+    .number{
+        padding: 2rem 1rem;
+        width: 100%;
     }
 }
